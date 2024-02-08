@@ -9,7 +9,9 @@ ol {
   margin: 0;
   padding: 0;
 }
-
+a {
+  color: #BCBFC6;
+}
 /* Global styles */
 body {
   font-family: 'Arial', sans-serif;
@@ -31,7 +33,12 @@ header {
   color: #A09FA5;
   /* Dark mode text color */
 }
-
+.Larger-font {
+  font-size: 300%;
+}
+.employment p{
+  margin-bottom: 20px;
+}
 /* Navigation styles */
 nav {
   padding: 10px 0;
@@ -185,4 +192,14 @@ footer {
 
 .read-the-docs {
   color: #888;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+  }
+
+  .container {
+    width: 90%; /* Adjust container width for smaller screens */
+  }
 }
