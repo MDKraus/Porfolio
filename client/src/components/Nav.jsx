@@ -12,19 +12,19 @@ export default function Nav({ openLoginModal, openSignupModal }) {
           openLoginModal={openLoginModal}
           openSignupModal={openSignupModal}
         />,
-        <Link key={2} className="nav-link text-light" to="/">
+        <Link key={2} className="nav-link text-light page-button" to="/">
           Home
         </Link>,
-        <Link key={3} className="nav-link text-light" to="/about">
+        <Link key={3} className="nav-link text-light page-button" to="/about">
           About
         </Link>,
-        <Link key={4} className="nav-link text-light" to="/contact">
+        <Link key={4} className="nav-link text-light page-button" to="/contact">
           Contact
         </Link>,
-        <Link key={5} className="nav-link text-light" to="/Employment">
+        <Link key={5} className="nav-link text-light page-button" to="/Employment">
           Employment
         </Link>,
-        <Link key={6} className="nav-link text-light" to="/Projects">
+        <Link key={6} className="nav-link text-light page-button" to="/Projects">
           Projects
         </Link>,
         <button
