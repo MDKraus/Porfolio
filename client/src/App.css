@@ -1,9 +1,17 @@
 /* Reset styles */
-body, h1, h2, h3, p, ul, ol {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
-
+a {
+  color: #BCBFC6;
+}
 /* Global styles */
 body {
   font-family: 'Arial', sans-serif;
@@ -20,24 +28,33 @@ body {
 /* Header styles */
 header {
   padding: 10px 0;
-  background-color: #333743; /* Dark mode background color */
-  color: #A09FA5; /* Dark mode text color */
+  background-color: #333743;
+  /* Dark mode background color */
+  color: #A09FA5;
+  /* Dark mode text color */
 }
-
+.Larger-font {
+  font-size: 300%;
+}
+.employment p{
+  margin-bottom: 20px;
+}
 /* Navigation styles */
 nav {
   padding: 10px 0;
-  text-align: center;
-  background-color: #5A6988; /* Dark mode background color */
-  border-bottom: 3px solid #333743; /* Dark mode border color */
+  background-color: #5A6988;
+  /* Dark mode background color */
+  border-bottom: 3px solid #333743;
+  /* Dark mode border color */
+  display: block;
 }
 
 nav a {
   text-decoration: none;
   padding: 10px;
   margin: 0 5px;
-  display: inline-flex;
-  color: #BCBFC6; /* Dark mode text color */
+  color: #BCBFC6;
+  /* Dark mode text color */
   background-color: #333743;
   border-radius: 5px;
 }
@@ -46,22 +63,35 @@ nav a:hover {
   text-decoration: underline;
   background-color: #646cff;
 }
+.page-button {
+  display: inline-flexbox;
+  background-color: #333743;
+  color: #BCBFC6;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
 
 .login-btn,
-.signup-btn{
+.signup-btn {
   background-color: #333743;
   color: #BCBFC6;
   padding: 5px 10px;
   margin: 0 5px;
   border: none;
   cursor: pointer;
-  background-color: #333743;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
-  justify-content: right;
+  display: inline-flex;
+  text-align: right;
 }
+
+
 .login-btn:hover,
-.signup-btn:hover{
+.signup-btn:hover {
   background-color: #646cff;
   color: #fff;
 }
@@ -69,37 +99,41 @@ nav a:hover {
 /* Main content styles */
 section {
   margin: 20px 0;
-  background-color: #242831; /* Dark mode background color */
-  color: #BCBFC6; /* Dark mode text color */
+  background-color: #242831;
+  /* Dark mode background color */
+  color: #BCBFC6;
+  /* Dark mode text color */
 }
 
 article {
   padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid #333743; /* Dark mode border color */
-  background-color: #242831; /* Dark mode background color */
+  border: 1px solid #333743;
+  /* Dark mode border color */
+  background-color: #242831;
+  /* Dark mode background color */
 }
 
-.highlight-box{
-  padding : 20px 20px 0px 20px;
-  border: 1px solid #333743; 
+.highlight-box {
+  padding: 20px 20px 0px 20px;
+  border: 1px solid #333743;
   margin-bottom: 20px;
   margin-top: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #2c303b;
   border-radius: 8px;
   display: inline-block;
 }
 
-.highlight-box-content{
+.highlight-box-content {
   padding: 20px;
 }
 
-.highlight-box:hover{
+.highlight-box:hover {
   box-shadow: 0 0 20px #000000;
 }
 
-.highlight-box-container{
+.highlight-box-container {
   display: flex;
   flex-direction: column;
 }
@@ -107,8 +141,10 @@ article {
 /* Footer styles */
 footer {
   padding: 10px 0;
-  background-color: #333743; /* Dark mode background color */
-  color: #BCBFC6; /* Dark mode text color */
+  background-color: #333743;
+  /* Dark mode background color */
+  color: #BCBFC6;
+  /* Dark mode text color */
 }
 
 /* Additional styles */
@@ -136,16 +172,17 @@ footer {
 
 @keyframes logo-spin {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-      animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 20s linear;
   }
 }
 
@@ -155,4 +192,14 @@ footer {
 
 .read-the-docs {
   color: #888;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+  }
+
+  .container {
+    width: 90%; /* Adjust container width for smaller screens */
+  }
 }
