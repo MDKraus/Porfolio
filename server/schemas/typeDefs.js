@@ -42,6 +42,7 @@ type Category {
   _id: ID
   name: String
 }
+
 type Query {
   getUserById(id: ID!): User
   categories: [Category]
@@ -56,7 +57,15 @@ type Mutation {
   addJob(title: String!, start_date: Date!, end_date: Date!, location: String!): Job
   updateUser(username: String, password: String): User
   login(username: String!, password: String!): Auth
-}
-  `;
+  addProject(
+    title: String!
+    description: String!
+    technologiesUsed: [String]
+    date: Date
+    githubLink: String
+    liveDemoLink: String
+  ): Project
+}`
+
 
 module.exports = typeDefs;

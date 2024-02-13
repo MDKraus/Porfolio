@@ -66,6 +66,10 @@ const resolvers = {
       const { title, start_date, end_date, location } = job;
       return { title, start_date, end_date, location };
     },
+    addProject: async (parents,args,context) => {
+      const project = await Project.create(args);
+      return project;
+    },
     login: async (parent, { username, password }) => {
       const user = await User.findOne({ username });
 
