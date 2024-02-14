@@ -25,7 +25,7 @@ const Projects = () => {
       technologiesUsed: ["HTML", "CSS", "JavaScript", "Edamam API"],
       date: "02-01-2024",
       githubLink: "https://github.com/MDKraus/RecipeFinder",
-      liveDemoLink: "",
+      liveDemoLink: "https://recipefinder-thi0.onrender.com/",
     },
   ];
   return (
