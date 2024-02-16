@@ -24,7 +24,7 @@ export default function Home() {
       <div className="highlight-box">
         <h2>Employment</h2>
         <p className='highlight-box-content'>
-          
+         ACI Transport, Dominoes Pizza, Tomatoes Apizza, Little Caesars 
         </p>
       </div>
       <div className="highlight-box">
