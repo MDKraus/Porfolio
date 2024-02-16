@@ -17,7 +17,7 @@ const Projects = () => {
       technologiesUsed: ["HTML","CSS", "JavaScript", "Node", "Express"],
       date: "02-01-2024",
       githubLink: "https://github.com/MDKraus/Note-Taker",
-      liveDemoLink: "",
+      liveDemoLink: "https://notetaker-x6ty.onrender.com",
     },
     {
       title: "Recipe Finder",
